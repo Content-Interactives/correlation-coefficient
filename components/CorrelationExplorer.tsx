@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { ScatterChart, Scatter, XAxis, YAxis, ZAxis, CartesianGrid, Tooltip, ResponsiveContainer, Line } from 'recharts';
 
+interface DataPoint {
+  x: number;
+  y: number;
+}
+
 const CorrelationExplorer = () => {
   const [correlation, setCorrelation] = useState(0.45);
   const [inputValue, setInputValue] = useState("0.45");
-  const [data, setData] = useState([]);
-  const [regressionLine, setRegressionLine] = useState([]);
+  const [data, setData] = useState<DataPoint[]>([]);
+  const [regressionLine, setRegressionLine] = useState<DataPoint[]>([]);
 
-  const generateData = (correlation, n = 50) => {
-    const result = [];
+  const generateData = (correlation: number, n: number = 50) => {
+    const result: DataPoint[] = [];
     for (let i = 0; i < n; i++) {
       const x = Math.random();
       const yMean = correlation * x + (1 - Math.abs(correlation)) * 0.5;
@@ -19,7 +24,7 @@ const CorrelationExplorer = () => {
     return result;
   };
 
-  const calculateRegressionLine = (data) => {
+  const calculateRegressionLine = (data: DataPoint[]) => {
     const n = data.length;
     const sumX = data.reduce((sum, point) => sum + point.x, 0);
     const sumY = data.reduce((sum, point) => sum + point.y, 0);
@@ -41,11 +46,11 @@ const CorrelationExplorer = () => {
     setRegressionLine(calculateRegressionLine(newData));
   }, [correlation]);
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value);
   };
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
       let value = parseFloat(inputValue);
       if (isNaN(value)) {
@@ -63,7 +68,7 @@ const CorrelationExplorer = () => {
     }
   };
 
-  const getCorrelationDescription = (corr) => {
+  const getCorrelationDescription = (corr: number) => {
     if (corr === 0) return "No correlation";
     if (corr > 0.7) return "Strong positive correlation";
     if (corr > 0.3) return "Moderate positive correlation";
