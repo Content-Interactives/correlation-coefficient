@@ -80,8 +80,6 @@ const CorrelationExplorer = () => {
 
   return (
     <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl shadow-lg max-w-4xl mx-auto">
-      <h1 className="text-[2rem] font-bold mb-6 text-center text-indigo-800 pt-6">Correlation Coefficient Explorer</h1>
-      
       <div className="bg-white p-6 rounded-lg shadow-md mb-6">
         <div className="flex items-center mb-4">
           <label className="text-xl font-medium text-indigo-700 mr-4" htmlFor="correlation-input">

@@ -5,8 +5,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/correlation-coefficient',
-  assetPrefix: '/correlation-coefficient',
+  ...(process.env.NODE_ENV === 'production' ? {
+    basePath: '/correlation-coefficient',
+    assetPrefix: '/correlation-coefficient',
+  } : {})
 }
 
 module.exports = nextConfig 
