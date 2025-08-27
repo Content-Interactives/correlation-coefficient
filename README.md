@@ -1,49 +1,42 @@
-# Correlation Coefficient Explorer
+# Correlation Coefficient
 
 An interactive visualization tool that helps understand the concept of correlation coefficients. Users can input different correlation values and see how they affect the relationship between two variables through a scatter plot and regression line.
 
-## Features
+---
 
-- Interactive scatter plot visualization
-- Real-time correlation coefficient input
-- Regression line display
-- Correlation strength description
-- Responsive design
+## 🔗 Live Interactive
 
-## Development
+Try it out here:  
+👉 [https://content-interactives.github.io/correlation-coefficient](https://content-interactives.github.io/correlation-coefficient)
 
-To run this project locally:
+---
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+## 🌐 Where This Interactive Is Being Used
 
-## Deployment
+This interactive is currently featured in the following locations:
 
-The project is automatically deployed to GitHub Pages when changes are pushed to the main branch.
+- <img width="20" height="20" alt="image" src="https://github.com/user-attachments/assets/5d12571f-8e12-4441-98ab-c0bc94069a96" /> **CK-12 Intent Response**  
+  - 👉 PRODUCTION: PENDING  
+  - 👉 MASTER: PENDING  
+- 📘 **CK-12 Flexbooks**
+  - 👉 PENDING
 
-To deploy manually:
+---
 
-1. Build the project:
-   ```bash
-   npm run build
-   ```
-2. Deploy to GitHub Pages:
-   ```bash
-   npm run deploy
-   ```
+## 📚 Standards & Subjects
 
-## Technologies Used
+This interactive aligns with the following topics and standards:
 
-- Next.js
-- React
-- Recharts
-- TypeScript
-- Tailwind CSS 
+- **📂 Subject Area**: High School Statistics  
+- **🧮 Topic**: Correlation & Regression  
+- **📏 Common Core**:  
+  - HSS-ID.C.8 – Compute (using technology) the correlation coefficient of a linear fit  
+  - HSS-ID.C.9 – Distinguish between correlation and causation
+
+---
+
+## 🛠️ Developer Notes
+
+- Built with: Next.js, React, Recharts, TypeScript, Tailwind CSS  
+- Deployed via GitHub Pages  
+- See `index.html` and supporting assets in `js/` and `css/` folders
