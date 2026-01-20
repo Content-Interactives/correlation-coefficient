@@ -19,7 +19,7 @@ This interactive is currently featured in the following locations:
   - 👉 PRODUCTION: [https://ck12.co/ucxkJ](https://ck12.co/ucxkJ)  
   - 👉 MASTER: N/A  
 - 📘 **CK-12 Flexbooks**
-  - 👉 PENDING
+  - 👉 11.2 Linear Correlation Coefficient: [https://flexbooks.ck12.org/cbook/ck-12-probability-and-statistics-concepts/section/11.2/primary/lesson/linear-correlation-coefficient-pst/](https://flexbooks.ck12.org/cbook/ck-12-probability-and-statistics-concepts/section/11.2/primary/lesson/linear-correlation-coefficient-pst/)
 
 ---
 
